@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthdayy</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="svg.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div class="wish">
+        <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Happy Birthday Minail!!
+            </text>
+        </svg>	
+    </div>
+    <div class="wishes hidden">
+        <div class="wish-1">
+            <div class="wish-write">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus dicta totam architecto ratione voluptatum vero cupiditate? Itaque soluta deserunt vitae recusandae esse eum optio earum natus excepturi corporis rerum, neque nostrum numquam. Doloremque amet magni, distinctio quidem facilis soluta inventore tempore vel. Quibusdam illum optio, sint provident architecto sequi quos suscipit? Nesciunt veritatis vitae harum, perferendis veniam beatae nemo aut, suscipit similique asperiores ratione nostrum doloribus neque repudiandae tempora minima expedita quibusdam unde dolorum nihil excepturi. Iure, nulla id?</p>
+            </div>
+        </div>
+        <div class="wish-2">
+            <div class="wish-write">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem quod numquam fuga sint voluptas amet sapiente, iusto a eos illum dolore ipsa. Error aliquam sapiente voluptatibus ea obcaecati dolore, magni repellendus soluta quae, natus modi impedit est. Recusandae ipsum quae, quod delectus dolor consequatur sed fugit quis voluptas alias, optio mollitia autem nesciunt! Suscipit porro ratione accusantium veritatis aperiam quae sed aut voluptatibus sapiente explicabo vitae quibusdam ducimus dignissimos nemo nihil libero fugit corrupti perspiciatis, quo quia sint ipsam.</p>
+         </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="container-pics">
+          <div class="mySlides1">
+            <div class="para">You & I are perfect for each other, Never believe anything else</div>
+        </div>
+      
+        <div class="mySlides1">
+              <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto tenetur possimus, eaque sint atque itaque quas! Quasi, assumenda earum?</div>
+        </div>
+      
+        <div class="mySlides1">
+            <div class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto blanditiis non explicabo doloribus. Consectetur ducimus provident non est laboriosam animi?</div>
+        </div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      
+
+    <script src="script.js"></script>
+    <!-- <script src="slider.js"></script> -->
+    <script src="svgScript.js"></script>
+    <script>
+        let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+    </script>
+</body>
+</html>
+
