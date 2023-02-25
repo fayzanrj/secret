@@ -15,3 +15,11 @@ for(let i = 0 ; i < reveals.length ; i++){
     }
 }
 }
+
+
+let next = document.getElementsByClassName('next')[0]
+
+
+setInterval(()=>{
+    next.click()
+  },4000)
