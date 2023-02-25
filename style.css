@@ -76,6 +76,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+.wishesnewbg-2{
+    width: 100%;
+    background-image: url("us1.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wishesnewbg-2{
+    width: 100%;
+    background-image: url("bg3.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .wish-para{
     background-color: rgba(0, 0, 0, 0.69);
@@ -87,11 +101,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
+
+.quotes{
+    width: 100%;
+    height: 100vh;
+}
 
 @media (max-width:600px) {
 
