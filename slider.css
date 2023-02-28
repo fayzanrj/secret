@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -84,11 +86,13 @@ marquee{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Gulzar' , serif;
+  font-size: .8rem;
 }
 
 .shayri-head{
   position: absolute;
-  top: 10%;
-  left: 10%;
-  
+  top: 5%;
+  right: 30%;
+  font-family: 'Gulzar' , serif;
 }
